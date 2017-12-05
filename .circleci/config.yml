@@ -27,4 +27,4 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       
-      - run: ./node_modules/hexo/bin/hexo deploy --generate
+      - deploy: ./node_modules/hexo/bin/hexo deploy --generate
