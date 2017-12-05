@@ -6,7 +6,7 @@ This repository contains Hexo source code for the USTC Team SwanGeese Mainpage, 
 
 ## Contributing
 
-If you were or are member of Team SwanGeese, please apply for joining the organization via contacting [Huanqi Cao](blealtan@gmail.com). Assigned to the mainpage maintainers team, you'll be able to update its content.
+If you were or are member of Team SwanGeese, please apply for joining the organization via contacting any of the [organization owners](https://github.com/orgs/USTC-SwanGeese/people?utf8=%E2%9C%93&query=%20role%3Aowner). Assigned to the mainpage maintainers team, you'll be able to update its content.
 
 DO NOT push to the [GitHub Pages Repository](https://github.com/USTC-SwanGeese/USTC-SwanGeese.github.io); it's continuely updated by CircleCI deploying.
 
