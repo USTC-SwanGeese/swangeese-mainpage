@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: USTC Team SwanGeese Mainpage
+title: USTC Team SwanGeese
 subtitle:
 description: Mainpage for Team SwanGeese for various student HPC-related competitions in University of Science and Technology of China.
 author: Team SwanGeese
-language: 
+language: en
 timezone:
 
 # URL
