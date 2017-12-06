@@ -13,11 +13,11 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
       - run:
-        name: Update dependencies
-        command: |
-          git submodule sync
-          git submodule update --init
-          npm update
+          name: Update dependencies
+          command: |
+            git submodule sync
+            git submodule update --init
+            npm update
       - save_cache:
           paths:
             - node_modules
@@ -29,10 +29,10 @@ jobs:
     working_directory: ~/swangeese-mainpage
     steps:
       - run:
-        name: Configure Git user
-        command: |
-          git config --global user.email "CircleCI@USTC-SwanGeese.github.io"
-          git config --global user.name "CircleCI"
+          name: Configure Git user
+          command: |
+            git config --global user.email "CircleCI@USTC-SwanGeese.github.io"
+            git config --global user.name "CircleCI"
       - add_ssh_keys:
           fingerprints:
             - "f3:c3:d2:6d:4c:5b:c3:3f:26:6e:ac:80:59:27:e2:82"
