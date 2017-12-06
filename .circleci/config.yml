@@ -1,35 +1,51 @@
 version: 2
 jobs:
-  build:
+  build-job:
     docker:
       - image: circleci/node:7.10
-
     working_directory: ~/swangeese-mainpage
-
     steps:
       - checkout
-
-      - run: git submodule sync
-      - run: git submodule update --init
-      - run: git config --global user.email "CircleCI@USTC-SwanGeese.github.io"
-      - run: git config --global user.name "CircleCI"
-      - add_ssh_keys:
-          fingerprints:
-            - "f3:c3:d2:6d:4c:5b:c3:3f:26:6e:ac:80:59:27:e2:82"
-
       # Download and cache dependencies
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-
-      - run: npm update
-
+      - run:
+          name: Update dependencies
+          command: |
+            git submodule sync
+            git submodule update --init
+            npm update
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      
-      - deploy:
-          command: ./node_modules/hexo/bin/hexo deploy --generate
+      - run: ./node_modules/hexo/bin/hexo generate
+  deploy-job:
+    docker:
+      - image: circleci/node:7.10
+    working_directory: ~/swangeese-mainpage
+    steps:
+      - run:
+          name: Configure Git user
+          command: |
+            git config --global user.email "CircleCI@USTC-SwanGeese.github.io"
+            git config --global user.name "CircleCI"
+      - add_ssh_keys:
+          fingerprints:
+            - "f3:c3:d2:6d:4c:5b:c3:3f:26:6e:ac:80:59:27:e2:82"
+      - run: ./node_modules/hexo/bin/hexo deploy
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build-job
+      - deploy-job:
+          requires:
+            - build-job
+          filters:
+            branches:
+              only: master

@@ -1,5 +1,9 @@
 ---
 title: Hello World
+tags:
+  - Overall
+categories:
+  - Introduction
 ---
 ***Team SwanGeese says hello to the world here.***
 
