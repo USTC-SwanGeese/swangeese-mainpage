@@ -1,0 +1,21 @@
+---
+title: 技能储备要求
+date: 2017-12-12 16:49:43
+tags:
+  - Overall
+categories:
+  - Tutorials
+---
+
+[comment]: # (WIP: 需要加入相关内部与外部资源的链接)
+
+# 技能储备要求
+
+对于技能储备，我们是没有硬性要求的；不会的东西学就好了。当然，有预先掌握的知识点或技能点会成为加分项。以下条目按重要性排序。
+
+- 信息检索，主要是搜索引擎的使用。熟练使用使用英文关键字在 Google 等（也就是不能是国内搜索引擎，例如百度）查找自己所需要的信息。
+- Linux 的使用。这里指的是 unix-like shell 中对包含 GNU toolchain 在内的工具的熟练使用，例如 gcc、git、bash script、包管理器等；以及对环境配置方式的了解，例如 `PATH`、`LD_LIBRARY_PATH` 等环境变量。
+- 理解计算机系统的构成，理解编译器、操作系统、处理器的工作方式。《计算机系统概论》（《Introduction to Computing Systems》）将是很好的教材/课程参考。
+- 了解 GitHub 上多人协作的方式；在各种比赛中，如果需要修改代码或编写一些工具，通过实验室的 GitLab 平台进行协作将是较合适的方式，而 GitLab 与 GitHub 相似点很多。
+- 了解包括 CMake 和 automake 在内的多种自动化构建系统，掌握 Makefile。
+- 了解并行计算的概念，会使用 OpenMP、MPI 或 CUDA 编写并行程序。
