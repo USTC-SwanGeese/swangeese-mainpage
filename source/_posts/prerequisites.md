@@ -15,7 +15,7 @@ categories:
 
 - 信息检索，主要是搜索引擎的使用。熟练使用使用英文关键字在 Google 等（也就是不能是国内搜索引擎，例如百度）查找自己所需要的信息。
 - Linux 的使用。这里指的是 unix-like shell 中对包含 GNU toolchain 在内的工具的熟练使用，例如 gcc、git、bash script、包管理器等；以及对环境配置方式的了解，例如 `PATH`、`LD_LIBRARY_PATH` 等环境变量。
-- 理解计算机系统的构成，理解编译器、操作系统、处理器的工作方式。《计算机系统概论》（《Introduction to Computing Systems》）将是很好的教材/课程参考。
+- 理解计算机系统的构成，理解编译器、操作系统、处理器的工作方式。《计算机系统概论》（《Introduction to Computing Systems》）将是很好的入门性质教材/课程参考，而《计算机体系结构：量化研究方法》则是很好的进阶教材（对应课程是计算机学院的必修课《计算机体系结构》）。
 - 了解 GitHub 上多人协作的方式；在各种比赛中，如果需要修改代码或编写一些工具，通过实验室的 GitLab 平台进行协作将是较合适的方式，而 GitLab 与 GitHub 相似点很多。
 - 了解包括 CMake 和 automake 在内的多种自动化构建系统，掌握 Makefile。
 - 了解并行计算的概念，会使用 OpenMP、MPI 或 CUDA 编写并行程序。
