@@ -36,3 +36,6 @@ menu_icons:
 #scheme: Pisces
 scheme: Gemini
 
+
+# Automatically saving scroll position on each post/page in cookies.
+save_scroll: true
