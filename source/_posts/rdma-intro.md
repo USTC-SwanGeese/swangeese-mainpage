@@ -118,3 +118,28 @@ RDMA 的工作模式是基于一个完成队列的形式：
 ---
 
 其实上面这些基础如果不太好的同学也不用过于担心，我们前面几届很多一开始参赛的同学都不是说很精通这些方面，但是如果你能真正地把整个参赛过程坚持下来，从中你会学到很多东西。
+
+# 一些参考资料
+
+- [HPC Advisory Council](http://hpcadvisorycouncil.com/competition.php)
+
+  比赛举办方的官网页面，历年比赛在上面都能找到
+
+- [RDMA Read and Write with IB Verbs *by Tarick Bedeir*](http://www.hpcadvisorycouncil.com/pdf/rdma-read-and-write-with-ib-verbs.pdf)
+
+- [RDMA mojo : blog on RDMA technology and programming](http://www.rdmamojo.com/)
+
+  RDMA mojo 是一个非常重要的资料站，上面基本上把需要用到的 RDMA 的一些函数结构给详细介绍了一遍
+
+- [RDMA Aware Networks Programming User Manual Rev 1.7](http://www.mellanox.com/related-docs/prod_software/RDMA_Aware_Programming_user_manual.pdf)
+
+- [A Tutorial of the RDMA Model](http://www.hpcwire.com/hpcwire/2006-09-15/a_tutorial_of_the_rdma_model-1.html)
+
+- 下面是往届实验室师兄的一点零碎资料：
+
+  - [RDMA Warming Up](http://jcf94.com/2016/06/27/2016-06-27-rdma/)
+  - [Simple usage of RDMA ibv](http://jcf94.com/2016/09/07/2016-09-07-rdmaibv/)
+
+---
+
+祝未来参赛的同学都能有所收获，取的好成绩。
